@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using FriendLetter.Models;
+using PlacesYouveBeen.Models;
 
-namespace FriendLetter.Controllers
+namespace PlacesYouveBeen.Controllers
 {
   public class HomeController : Controller
   {
