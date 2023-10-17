@@ -42,7 +42,7 @@ namespace PlacesYouveBeen.Tests
     // }
 
     [TestMethod]
-    public void GetAll_ReturnsEmptyList_CarList()
+    public void GetAll_ReturnsEmptyList_PlaceList()
     {
       List<Place> newList = new List<Place> { };
       List<Place> result = Place.GetAll();
@@ -59,6 +59,26 @@ namespace PlacesYouveBeen.Tests
       List<Place> newList = new List<Place> { newPlace1, newPlace2 };
       List<Place> result = Place.GetAll();
       CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
+    public void GetId_ItemsInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      string place = "portland";
+      Place newPlace = new Place(place);
+      int result = newPlace.Id;
+      Assert.AreEqual(1, result);
+    }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectPlace_Place()
+    {
+      string place01 = "portland";
+      string place02 = "vancouver";
+      Place newPlace1 = new Place(place01);
+      Place newPlace2 = new Place(place02);
+      Place result = Place.Find(2);
+      Assert.AreEqual(newPlace2, result);
     }
   }
 }
