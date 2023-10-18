@@ -10,9 +10,20 @@
       crossorigin="anonymous">
   </head>
   <body>
+    <h3>Add a new city</h3>
     <form action="/places" method="post">
-      <label for="cityName">Add a new city</label>
+      <label for="cityName">City</label>
       <input id="cityName" name="cityName" type="text">
+      <br>
+      <label for="stayLength">Length of Stay</label>
+      <input id="stayLength" name="stayLength" type="text">
+      <br>
+      <label for="journalEntry">Journal Entry</label>
+      <input id="journalEntry" name="journalEntry" type="text" size="100">
+      <br>
+      <label for="imageURL">Image URL</label>
+      <input id="imageURL" name="imageURL" type="text">
+      <br>
       <button type="submit">Submit</button>
     </form>
   </body>

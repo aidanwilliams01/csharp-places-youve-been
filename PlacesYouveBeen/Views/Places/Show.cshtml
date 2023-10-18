@@ -12,8 +12,12 @@
   <body>
     <h3>Place Detail: </h3>
 
-    <h4>@Model.CityName</h4>
-
+    <p>City: @Model.CityName</p>
+    <p>Length of stay: @Model.StayLength</p>
+    <p>Journal entry: @Model.JournalEntry</p>
+    <img src="@Model.ImageURL">
+    <br>
+    <br>
     <a href='/places/new'>Add another place</a>
     <a href='/places'>View all places</a>
   </body>

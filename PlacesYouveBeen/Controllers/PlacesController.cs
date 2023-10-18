@@ -21,13 +21,13 @@ namespace PlacesYouveBeen.Controllers
     }
 
     [HttpPost("/places")]
-    public ActionResult Create(string cityName)
+    public ActionResult Create(string cityName, string stayLength, string journalEntry, string imageURL)
     {
-      Place newPlace = new Place(cityName);
+      Place newPlace = new Place(cityName, stayLength, journalEntry, imageURL);
       return RedirectToAction("Index");
     }
 
-    [HttpGet("items/{id}")]
+    [HttpGet("/places/{id}")]
     public ActionResult Show(int id)
     {
       Place foundPlace = Place.Find(id);

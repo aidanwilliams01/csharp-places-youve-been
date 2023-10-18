@@ -20,10 +20,10 @@
     <ul>
       @foreach (Place place in Model)
       {
-        <li><a href='items/@place.Id'>@place.CityName</a></li>
+        <li><a href='places/@place.Id'>@place.CityName</a></li>
       }
     </ul>
-    <a href="/items/new">Add a new place.</a>
+    <a href="/places/new">Add a new place.</a>
     @* <form action="/items/delete" method="post">
       <button type="submit" name="button">Clear All Items</button>
     </form> *@
