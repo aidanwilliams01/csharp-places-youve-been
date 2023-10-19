@@ -17,7 +17,7 @@ namespace PlacesYouveBeen.Tests
     [TestMethod]
     public void PlaceConstructor_CreatesInstanceOfPlace_Place()
     {
-      Place newPlace = new Place("test");
+      Place newPlace = new Place("test", "test", "test", "test");
       Assert.AreEqual(typeof(Place), newPlace.GetType());
     }
 
@@ -54,8 +54,8 @@ namespace PlacesYouveBeen.Tests
     {
       string place01 = "portland";
       string place02 = "vancouver";
-      Place newPlace1 = new Place(place01);
-      Place newPlace2 = new Place(place02);
+      Place newPlace1 = new Place(place01, "test", "test", "test");
+      Place newPlace2 = new Place(place02, "test", "test", "test");
       List<Place> newList = new List<Place> { newPlace1, newPlace2 };
       List<Place> result = Place.GetAll();
       CollectionAssert.AreEqual(newList, result);
@@ -65,7 +65,7 @@ namespace PlacesYouveBeen.Tests
     public void GetId_ItemsInstantiateWithAnIdAndGetterReturns_Int()
     {
       string place = "portland";
-      Place newPlace = new Place(place);
+      Place newPlace = new Place(place, "test", "test", "test");
       int result = newPlace.Id;
       Assert.AreEqual(1, result);
     }
@@ -75,8 +75,8 @@ namespace PlacesYouveBeen.Tests
     {
       string place01 = "portland";
       string place02 = "vancouver";
-      Place newPlace1 = new Place(place01);
-      Place newPlace2 = new Place(place02);
+      Place newPlace1 = new Place(place01, "test", "test", "test");
+      Place newPlace2 = new Place(place02, "test", "test", "test");
       Place result = Place.Find(2);
       Assert.AreEqual(newPlace2, result);
     }
