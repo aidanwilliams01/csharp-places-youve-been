@@ -1,6 +1,6 @@
-# (Application Name)
+# Places You've Been
 
-#### (Brief description of application)
+#### A travel diary.
 
 #### By Aidan Williams
 
@@ -11,6 +11,8 @@
 * _MSTest_
 
 ## Description
+
+A website where users can add entries to a list of places they've been.
 
 ## Setup Instructions
 

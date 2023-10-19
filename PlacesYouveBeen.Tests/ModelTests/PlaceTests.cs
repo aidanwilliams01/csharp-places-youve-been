@@ -21,26 +21,6 @@ namespace PlacesYouveBeen.Tests
       Assert.AreEqual(typeof(Place), newPlace.GetType());
     }
 
-    // [TestMethod]
-    // public void GetMake_ReturnsMake_String()
-    // {
-    //   string make = "Honda";
-    //   Car newCar = new Car(make, "Element");
-    //   string result = newCar.Make;
-    //   Assert.AreEqual(make, result);
-    // }
-
-    // [TestMethod]
-    // public void SetMake_SetMake_Void()
-    // {
-    //   string make = "Honda";
-    //   Car newCar = new Car(make, "Element");
-    //   string updatedMake = "Honda2";
-    //   newCar.Make = updatedMake;
-    //   string result = newCar.Make;
-    //   Assert.AreEqual(updatedMake, result);
-    // }
-
     [TestMethod]
     public void GetAll_ReturnsEmptyList_PlaceList()
     {
